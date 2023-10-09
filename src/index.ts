@@ -1,5 +1,5 @@
 const updateYears = () => {
-  const years = 1 + new Date().getFullYear() - 2014;
+  const years = new Date().getFullYear() - 2013;
   const element = document.getElementById("years");
   if (element) {
     element.innerText = years.toString();

@@ -4,6 +4,7 @@
   /* Color scheme courtesy of https://stephango.com/flexoki */
   --bg: rgb(16, 15, 15);
   --tx: rgb(206, 205, 195);
+  --tx2: rgb(135, 133, 128);
   --ui: rgb(64, 62, 60);
   --re: rgb(209, 77, 65);
   --or: rgb(218, 112, 44);
@@ -40,6 +41,10 @@ a {
   &:hover {
     color: var(--cy);
   }
+}
+
+.tx2 {
+  color: var(--tx2);
 }
 
 .re {
@@ -114,6 +119,7 @@ ul {
 
 p {
   max-width: var(--page-width);
+  margin-top: 0;
 }
 
 h1,
@@ -129,6 +135,7 @@ h1 {
 
 h2 {
   margin-top: 50px;
+  margin-bottom: 20px;
   font-size: 1.4em;
 }
 
@@ -143,4 +150,10 @@ h3 {
   grid-template-columns: var(--tech-table-columns);
   column-gap: 50px;
   max-width: var(--page-width);
+}
+
+.employment-table {
+  display: grid;
+  grid-template-columns: 200px 200px auto;
+  column-gap: 20px;
 }
