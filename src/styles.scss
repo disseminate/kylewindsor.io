@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap");
 
 :root {
+  // Color scheme courtesy of https://stephango.com/flexoki
   --bg: rgb(16, 15, 15);
   --tx: rgb(206, 205, 195);
   --ui: rgb(64, 62, 60);
@@ -9,7 +10,6 @@
   --ye: rgb(208, 162, 21);
   --gr: rgb(135, 154, 57);
   --cy: rgb(58, 169, 159);
-  --cy-dark: rgb(36, 131, 123);
   --bl: rgb(67, 133, 190);
   --pu: rgb(139, 126, 200);
   --ma: rgb(206, 93, 151);
@@ -36,7 +36,7 @@
 }
 
 a {
-  color: var(--cy);
+  color: var(--tx);
   &:hover {
     color: var(--bl);
   }
