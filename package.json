@@ -1,0 +1,14 @@
+{
+  "name": "kylewindsor.io",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "@types/node": "^20.8.3",
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html && cp src/robots.txt dist/robots.txt"
+  }
+}
