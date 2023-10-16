@@ -26,7 +26,8 @@
   --subsubheader-font-size: 1.5em;
 
   --text-weight: 400;
-  --header-weight: 700;
+  --header-weight: 200;
+  --title-weight: 200;
 
   --tech-table-columns: 1fr 1fr 1fr;
   --employment-template: 1fr / 200px 200px 1fr;
@@ -160,23 +161,24 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: var(--header-weight);
 }
 
 h1 {
   font-size: var(--header-font-size);
   max-width: var(--page-width);
+  font-weight: var(--title-weight);
 }
 
 h2 {
   margin-bottom: 20px;
   font-size: var(--subheader-font-size);
+  font-weight: var(--header-weight);
   max-width: var(--page-width);
 }
 
 h3 {
   font-size: var(--subsubheader-font-size);
-  font-weight: var(--text-weight);
+  font-weight: var(--header-weight);
   max-width: var(--page-width);
 }
 

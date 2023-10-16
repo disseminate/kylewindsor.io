@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&display=swap"
       rel="stylesheet"
       media="print"
       onload="this.onload=null;this.removeAttribute('media');"
@@ -15,6 +15,7 @@
     <link rel="canonical" href="https://kylewindsor.io/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Kyle Windsor's homepage, with work and project experience and a brief biography." />
+    <base target="_blank" />
   </head>
   <body>
     <div id="background">
@@ -22,10 +23,10 @@
     </div>
     <div id="container">
       <main>
-        <h1>Kyle Windsor</h1>
+        <header><h1>Kyle Windsor</h1></header>
         <hr />
-        <section>
-          <h2>About</h2>
+        <section aria-labelledby="about">
+          <h2 id="about">About</h2>
           <p>I'm a senior full-stack software engineer.</p>
           <p>
             I'm proficient in various <span class="ye">web technologies</span> and <span class="ye">C++</span>. I've been programming since
@@ -113,64 +114,64 @@
             </div>
           </div>
         </section>
-        <section>
-          <h2>Work Experience</h2>
+        <section aria-labelledby="work-experience">
+          <h2 id="work-experience">Work Experience</h2>
           <div class="employment-table">
             <div>
-              <a href="https://alderongames.com/" target="_blank">Alderon Games</a>
+              <a href="https://alderongames.com/">Alderon Games</a>
             </div>
             <div class="tx2">2023 &mdash; present</div>
             <div>Contract programmer.</div>
             <div>
-              <a href="https://ramjetstudios.com/" target="_blank">Ramjet Studios</a>
+              <a href="https://ramjetstudios.com/">Ramjet Studios</a>
             </div>
             <div class="tx2">2022 &mdash; present</div>
             <div>Founder & CEO.</div>
-            <div><a href="https://mercury.com/" target="_blank">Mercury</a></div>
+            <div><a href="https://mercury.com/">Mercury</a></div>
             <div class="tx2">2022 &mdash; 2023</div>
             <div>Senior frontend engineer.</div>
             <div>
-              <a href="https://www.angellist.com/" target="_blank">AngelList</a>
+              <a href="https://www.angellist.com/">AngelList</a>
             </div>
             <div class="tx2">2022</div>
             <div>Senior fullstack engineer.</div>
             <div>
-              <a href="https://www.prepared911.com/" target="_blank">Prepared</a>
+              <a href="https://www.prepared911.com/">Prepared</a>
             </div>
             <div class="tx2">2021 &mdash; 2022</div>
             <div>Staff fullstack engineer.</div>
             <div>
-              <a href="https://www.crowbarcollective.com/" target="_blank">Crowbar Collective</a>
+              <a href="https://www.crowbarcollective.com/">Crowbar Collective</a>
             </div>
             <div class="tx2">2021</div>
             <div>Contract programmer.</div>
             <div>
-              <a href="https://www.qi.games/" target="_blank">QI Games</a>
+              <a href="https://www.qi.games/">QI Games</a>
             </div>
             <div class="tx2">2020 &mdash; 2021</div>
             <div>Lead programmer.</div>
             <div>
-              <a href="https://devlift.com/" target="_blank">Devlift Media</a>
+              <a href="https://devlift.com/">Devlift Media</a>
             </div>
             <div class="tx2">2015 &mdash; 2020</div>
             <div>Senior fullstack developer.</div>
             <div>
-              <a href="https://isp.ca/" target="_blank">ISP Canada</a>
+              <a href="https://isp.ca/">ISP Canada</a>
             </div>
             <div class="tx2">2013 &mdash; 2015</div>
             <div>Tools programmer.</div>
           </div>
         </section>
-        <section>
-          <h2>Ongoing Projects</h2>
+        <section aria-labelledby="projects">
+          <h2 id="projects">Ongoing Projects</h2>
           <ul>
             <li>
-              <a href="https://vein.gg/" target="_blank">VEIN</a>, multiplayer open-world survival game.
-              <span class="gr">54,000</span> Steam wishlist preorders and counting. <span class="ye">C++, Node</span>.
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. <span class="gr">54,000</span> Steam wishlist
+              preorders and counting. <span class="ye">C++, Node</span>.
             </li>
             <li>
-              <a href="https://pomelolanguage.com/" target="_blank">Pomelo</a>, language-learning platform designed as an
-              <a href="https://apps.ankiweb.net/" target="_blank">Anki</a>
+              <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an
+              <a href="https://apps.ankiweb.net/">Anki</a>
               replacement.
               <span class="ye">React, Node, Typescript, PostgreSQL</span>.
             </li>
@@ -178,32 +179,27 @@
           <p>
             There are too many projects I've worked on prior to these to list. If you're curious please get in contact. You can also take a
             look at my
-            <a href="https://github.com/disseminate" target="_blank">GitHub</a>
+            <a href="https://github.com/disseminate">GitHub</a>
             but most of my projects are private.
           </p>
         </section>
-        <section>
-          <h2>Education</h2>
+        <section aria-labelledby="education">
+          <h2 id="education">Education</h2>
           <p>
             I attended
-            <a href="https://uwo.ca/" target="_blank">the University of Western Ontario</a>
+            <a href="https://uwo.ca/">the University of Western Ontario</a>
             for <span class="gr">7</span> years. I earned my BSc in <span class="ye">computer science</span> and
             <span class="ye">astrophysics</span>, followed by my MSc in <span class="ye">computer science</span>. I had a brief period of
-            <span class="ye">astrophysics</span> study at the <a href="https://www.hku.hk/" target="_blank">University of Hong Kong</a>.
+            <span class="ye">astrophysics</span> study at the <a href="https://www.hku.hk/">University of Hong Kong</a>.
           </p>
           <p>
             You can read
-            <a href="/bachelor-thesis.pdf" target="_blank">my bachelor's thesis here</a>. My
-            <a href="https://ir.lib.uwo.ca/etd/6844/" target="_blank">master's thesis is available here</a>.
+            <a href="/bachelor-thesis.pdf">my bachelor's thesis here</a>. My
+            <a href="https://ir.lib.uwo.ca/etd/6844/">master's thesis is available here</a>.
           </p>
         </section>
-        <section>
-          <h2>Personal</h2>
-          <p>
-            My
-            <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator" target="_blank">MBTI</a>
-            is ENTJ.
-          </p>
+        <section aria-labelledby="personal">
+          <h2 id="personal">Personal</h2>
           <p>
             My hobbies include language learning (previously studied Chinese, Cantonese, Spanish and now focusing on Thai) and collecting
             geodes.
@@ -212,40 +208,42 @@
           <p>
             My favorite music genres include electronic (drum and bass, Y2K, industrial, house, trip hop, bass), folk, and progressive rock.
             You can
-            <a href="https://open.spotify.com/user/22ayc3ifl5r2rm2qbn232yqzi?si=2a21a8e1568c4a55" target="_blank"
-              >view my Spotify profile here</a
-            >.
+            <a href="https://open.spotify.com/user/22ayc3ifl5r2rm2qbn232yqzi?si=2a21a8e1568c4a55">view my Spotify profile here</a>.
           </p>
           <p>
             My favorite author is
-            <a href="https://www.gregegan.net/" target="_blank">Greg Egan</a>. You should buy some of his anthologies if you're at all
-            interested in hard sci-fi.
+            <a href="https://www.gregegan.net/">Greg Egan</a>. You should buy some of his anthologies if you're at all interested in hard
+            sci-fi.
           </p>
           <p>
             My favorite games include
-            <a href="https://en.wikipedia.org/wiki/Subnautica" target="_blank">Subnautica</a>, the
-            <a href="https://en.wikipedia.org/wiki/Half-Life_(series)" target="_blank">Half-Life</a>
+            <a href="https://en.wikipedia.org/wiki/Subnautica">Subnautica</a>, the
+            <a href="https://en.wikipedia.org/wiki/Half-Life_(series)">Half-Life</a>
             series,
-            <a href="https://en.wikipedia.org/wiki/Left_4_Dead_(franchise)" target="_blank">Left 4 Dead</a>
-            1 &amp; 2, the
-            <a href="https://en.wikipedia.org/wiki/Mass_Effect" target="_blank">Mass Effect</a>
+            <a href="https://en.wikipedia.org/wiki/Left_4_Dead_(franchise)">Left 4 Dead 1 &amp; 2</a>, the
+            <a href="https://en.wikipedia.org/wiki/Mass_Effect">Mass Effect</a>
             series,
-            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas" target="_blank">Fallout: New Vegas</a>, and
-            <a href="https://en.wikipedia.org/wiki/Project_Zomboid" target="_blank">Project Zomboid</a>. Generally I enjoy first-person
-            shooters, RPGs, and simulation games. I also play a lot of games in VR.
+            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas">Fallout: New Vegas</a>, and
+            <a href="https://en.wikipedia.org/wiki/Project_Zomboid">Project Zomboid</a>. Generally I enjoy first-person shooters, RPGs, and
+            simulation games. I also play a lot of games in VR.
+          </p>
+          <p>
+            My
+            <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator">MBTI</a>
+            is ENTJ.
           </p>
         </section>
-        <section>
-          <h2>Contact</h2>
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
           <p>
             Send an email to
-            <a href="mailto:kyle@kylewindsor.io" target="_blank">kyle@kylewindsor.io</a>.
+            <a href="mailto:kyle@kylewindsor.io">kyle@kylewindsor.io</a>.
           </p>
         </section>
-        <section>
+        <section aria-label="Website Source Code">
           <p>
             This site is written in plain HTML and CSS with optional JavaScript. You can
-            <a href="https://github.com/disseminate/kylewindsor.io" target="_blank">find the source here</a>.
+            <a href="https://github.com/disseminate/kylewindsor.io">find the source here</a>.
           </p>
         </section>
       </main>
