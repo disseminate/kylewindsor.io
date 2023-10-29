@@ -1,4 +1,5 @@
-let mouseLocation: [number, number] = [100000, 100000];
+let mouseLocation: [number, number] = [-100000, -100000];
+let lerpedMouseLocation: [number, number] = [-100000, -100000];
 
 const updateYears = () => {
   const years = new Date().getFullYear() - 2013;
@@ -25,8 +26,8 @@ const sineFunction = (colorIndex: number, maxWidth: number, colorCount: number, 
     100 +
     Math.sin(height / scrollSpacing + time / 5000 + window.scrollY / scrollSpacing) * 50;
 
-  const dx = Math.abs(x - mouseLocation[0]);
-  const dy = Math.abs(height - mouseLocation[1]);
+  const dx = Math.abs(x - lerpedMouseLocation[0]);
+  const dy = Math.abs(height - lerpedMouseLocation[1]);
   const dist = Math.sqrt(dx * dx + dy * dy);
   let mouseMult = dist / 800;
   if (mouseMult > 1) {
@@ -45,6 +46,7 @@ let animationIndex = -1;
 const updateCanvas = () => {
   const scrollSpacing = 80;
 
+  let lastTime = 0;
   const animate = (time: number) => {
     const canvas = document.getElementById('background-canvas') as HTMLCanvasElement;
 
@@ -58,8 +60,18 @@ const updateCanvas = () => {
       return;
     }
 
+    const dt = time - lastTime;
+
     const w = ctx.canvas.width;
     const h = ctx.canvas.height;
+
+    const dx = mouseLocation[0] - lerpedMouseLocation[0];
+    const dy = mouseLocation[1] - lerpedMouseLocation[1];
+    const dxn = (dx * 0.02 * dt) / 1000;
+    const dyn = (dy * 0.02 * dt) / 1000;
+
+    lerpedMouseLocation[0] = lerpedMouseLocation[0] + dxn;
+    lerpedMouseLocation[1] = lerpedMouseLocation[1] + dyn;
 
     if (w <= 800) {
       // Don't pull resources on mobile
@@ -121,4 +133,9 @@ window.addEventListener('resize', () => {
 
 document.addEventListener('mousemove', (event) => {
   mouseLocation = [event.clientX, event.clientY];
+
+  if (lerpedMouseLocation[0] < 0) {
+    lerpedMouseLocation[0] = mouseLocation[0];
+    lerpedMouseLocation[1] = mouseLocation[1];
+  }
 });
