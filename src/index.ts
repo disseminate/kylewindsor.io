@@ -1,3 +1,5 @@
+let mouseLocation: [number, number] = [100000, 100000];
+
 const updateYears = () => {
   const years = new Date().getFullYear() - 2013;
   const element = document.getElementById('years');
@@ -18,11 +20,24 @@ const resize = () => {
 };
 
 const sineFunction = (colorIndex: number, maxWidth: number, colorCount: number, height: number, scrollSpacing: number, time: number) => {
-  return (
+  let x =
     colorIndex * ((0.5 * maxWidth) / (colorCount * 2)) +
     100 +
-    Math.sin(height / scrollSpacing + time / 5000 + window.scrollY / scrollSpacing) * 50
-  );
+    Math.sin(height / scrollSpacing + time / 5000 + window.scrollY / scrollSpacing) * 50;
+
+  const dx = Math.abs(x - mouseLocation[0]);
+  const dy = Math.abs(height - mouseLocation[1]);
+  const dist = Math.sqrt(dx * dx + dy * dy);
+  let mouseMult = dist / 800;
+  if (mouseMult > 1) {
+    mouseMult = 1;
+  }
+  if (mouseMult < 0) {
+    mouseMult = 0;
+  }
+  x = x * mouseMult;
+
+  return x;
 };
 
 let animationIndex = -1;
@@ -102,4 +117,8 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
   resize();
   updateCanvas();
+});
+
+document.addEventListener('mousemove', (event) => {
+  mouseLocation = [event.clientX, event.clientY];
 });
