@@ -26,18 +26,6 @@ const sineFunction = (colorIndex: number, maxWidth: number, colorCount: number, 
     100 +
     Math.sin(height / scrollSpacing + time / 5000 + window.scrollY / scrollSpacing) * 50;
 
-  const dx = Math.abs(x - lerpedMouseLocation[0]);
-  const dy = Math.abs(height - lerpedMouseLocation[1]);
-  const dist = Math.sqrt(dx * dx + dy * dy);
-  let mouseMult = dist / 800;
-  if (mouseMult > 1) {
-    mouseMult = 1;
-  }
-  if (mouseMult < 0) {
-    mouseMult = 0;
-  }
-  x = x * mouseMult;
-
   return x;
 };
 
