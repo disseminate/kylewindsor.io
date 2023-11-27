@@ -7,6 +7,7 @@
   --ui3: oklch(36.51% 0.004 67.69);
   --tx: oklch(84.63% 0.014 102.05);
   --tx2: oklch(61.69% 0.008 88.67);
+
   --re: oklch(59.7% 0.169 28.38);
   --or: oklch(65.76% 0.154 49.3);
   --ye: oklch(73.46% 0.146 87.46);
@@ -53,6 +54,48 @@
     --employment-gap: 20px;
     --technologies-padding: 40px;
     --technologies-border-radius: 20px;
+  }
+}
+@media print {
+  :root {
+    --ui: black;
+    --ui2: black;
+    --ui3: black;
+    --tx: black;
+    --tx2: black;
+    --bg: white;
+    --bg2: white;
+
+    --re: black;
+    --or: black;
+    --ye: black;
+    --gr: black;
+    --cy: black;
+    --bl: black;
+    --pu: black;
+    --ma: black;
+
+    --body-padding: 50px;
+    --page-width: 100%;
+    --section-spacing: 20px;
+
+    --font-size-baseline: 12px;
+  }
+
+  .hide-print {
+    display: none;
+  }
+  .show-print {
+    display: initial;
+  }
+}
+
+@media screen {
+  .hide-print {
+    display: initial;
+  }
+  .show-print {
+    display: none;
   }
 }
 
@@ -192,6 +235,14 @@ h3 {
   box-sizing: border-box;
   border-radius: var(--technologies-border-radius);
   border: 1px solid var(--ui);
+}
+
+@media print {
+  .technologies-table {
+    padding: 0px;
+    border-radius: 0;
+    border: none;
+  }
 }
 
 .employment-table {
