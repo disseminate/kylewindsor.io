@@ -20,9 +20,9 @@
   --page-width: 1000px;
   --section-spacing: 50px;
 
-  --font-size-baseline: 18px;
-  --header-font-size: 6em;
-  --subheader-font-size: 2em;
+  --font-size-baseline: 16px;
+  --header-font-size: 4em;
+  --subheader-font-size: 1.8em;
   --subsubheader-font-size: 1.5em;
 
   --text-weight: 400;
@@ -40,7 +40,6 @@
 @media screen and (max-width: 800px) {
   :root {
     --body-padding: 40px;
-    --font-size-baseline: 16px;
     --page-width: 100%;
     --header-font-size: 2.5em;
     --employment-template: 1fr / 1fr 1fr 1fr;
