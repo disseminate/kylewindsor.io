@@ -20,103 +20,13 @@ const resize = () => {
   canvas.setAttribute('height', window.innerHeight.toString(10));
 };
 
-const sineFunction = (colorIndex: number, maxWidth: number, colorCount: number, height: number, scrollSpacing: number, time: number) => {
-  let x =
-    colorIndex * ((0.5 * maxWidth) / (colorCount * 2)) +
-    100 +
-    Math.sin(height / scrollSpacing + time / 5000 + window.scrollY / scrollSpacing) * 50;
-
-  return x;
-};
-
-let animationIndex = -1;
-
-const updateCanvas = () => {
-  const scrollSpacing = 80;
-
-  let lastTime = 0;
-  const animate = (time: number) => {
-    const canvas = document.getElementById('background-canvas') as HTMLCanvasElement;
-
-    if (!canvas) {
-      return;
-    }
-
-    const ctx = canvas.getContext('2d');
-
-    if (!ctx) {
-      return;
-    }
-
-    const dt = time - lastTime;
-
-    const w = ctx.canvas.width;
-    const h = ctx.canvas.height;
-
-    const dx = mouseLocation[0] - lerpedMouseLocation[0];
-    const dy = mouseLocation[1] - lerpedMouseLocation[1];
-    const dxn = (dx * 0.02 * dt) / 1000;
-    const dyn = (dy * 0.02 * dt) / 1000;
-
-    lerpedMouseLocation[0] = lerpedMouseLocation[0] + dxn;
-    lerpedMouseLocation[1] = lerpedMouseLocation[1] + dyn;
-
-    if (w <= 800) {
-      // Don't pull resources on mobile
-      return;
-    }
-
-    const maxWidth = w - 1000 - 200;
-    if (maxWidth <= 0) {
-      return;
-    }
-
-    const colors = [
-      'oklch(59.7% 0.169 28.38)', // --re
-      'oklch(65.76% 0.154 49.3)', // --or
-      'oklch(73.46% 0.146 87.46)', // --ye
-      'oklch(65.13% 0.124 119.38)', // --gr
-      'oklch(67.01% 0.1 186.58)', // --cy
-    ];
-
-    ctx.fillStyle = 'rgb(16, 15, 15)';
-    ctx.fillRect(0, 0, w, h);
-
-    const timeOffset = time + 55000;
-
-    for (let colorIndex = 0; colorIndex < colors.length; colorIndex++) {
-      ctx.beginPath();
-      const interval = 10;
-      const start = sineFunction(colorIndex, maxWidth, colors.length, 0, scrollSpacing, timeOffset);
-      ctx.moveTo(start, 0);
-      ctx.lineWidth = 1;
-      for (let i = 0; i <= h + interval; i += interval) {
-        ctx.lineTo(sineFunction(colorIndex, maxWidth, colors.length, i, scrollSpacing, timeOffset), i);
-      }
-      ctx.strokeStyle = colors[colorIndex]!;
-      ctx.stroke();
-    }
-
-    requestAnimationFrame(animate);
-  };
-
-  if (animationIndex > -1) {
-    cancelAnimationFrame(animationIndex);
-    animationIndex = -1;
-  }
-
-  animationIndex = requestAnimationFrame(animate);
-};
-
 window.addEventListener('load', () => {
   updateYears();
   resize();
-  updateCanvas();
 });
 
 window.addEventListener('resize', () => {
   resize();
-  updateCanvas();
 });
 
 document.addEventListener('mousemove', (event) => {
