@@ -168,8 +168,8 @@ body {
   bottom: 0;
 
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: flex-start;
   z-index: 1;
 }
 
