@@ -246,9 +246,31 @@ h3 {
 }
 
 .employment-table {
+  width: 100%;
+}
+.employment-entry {
   display: grid;
   grid-template: var(--employment-template);
   gap: var(--employment-gap);
+  margin-bottom: 14px;
+}
+.employment-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  margin-top: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.employment-tags div {
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid var(--ui2);
+  margin-right: 4px;
+  margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 section {
