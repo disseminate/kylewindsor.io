@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { H3, ResumeHeader } from '../components/typography';
+import { ResumeHeader } from '../components/typography';
 import styled from 'styled-components';
 import { ESkillLocus, SKILLS } from '../data/skills';
 import { EWorkExperienceRealm, WORK_EXPERIENCES } from '../data/workExperience';
@@ -195,10 +195,7 @@ const Resume = () => {
               if (queryParams.has('games')) {
                 return experience.realm.includes(EWorkExperienceRealm.Games);
               }
-              if (queryParams.has('minimal')) {
-                return !experience.omitFromResumeIfNeeded;
-              }
-              return true;
+              return !experience.omitFromResumeIfNeeded;
             }).map((experience) => (
               <WorkExperience key={experience.name}>
                 <WorkExperienceHeader>
