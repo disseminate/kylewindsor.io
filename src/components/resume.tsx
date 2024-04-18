@@ -65,19 +65,15 @@ const ProfileName = styled.div`
   font-size: 1.5em;
 `;
 
+const ProfileContactBox = styled.div`
+  margin-bottom: 30px;
+`;
+
 const ProfileLine = styled.div`
   margin-bottom: 6px;
   max-width: 100%;
   line-break: anywhere;
   opacity: 0.8;
-`;
-
-const SidebarDetails = styled.div`
-  padding: 30px;
-  box-sizing: border-box;
-  @media print {
-    padding: 10px;
-  }
 `;
 
 const Main = styled.main`
@@ -108,7 +104,7 @@ const WorkExperienceDate = styled.div`
 `;
 const WorkExperienceDescription = styled.div`
   color: ${(props) => props.theme.Colors.ui1};
-  max-width: 90%;
+  max-width: 80%;
 `;
 
 interface IResumeComponentProps {
@@ -124,12 +120,12 @@ const ResumeComponent = (props: IResumeComponentProps) => {
             <ProfileImage src="/profile.jpg" alt="Headshot" />
           </ProfileImageContainer>
           <ProfileName>Kyle Windsor</ProfileName>
-          <ProfileLine>kyle@kylewindsor.io</ProfileLine>
-          <ProfileLine>kylewindsor.io</ProfileLine>
-          <ProfileLine>linkedin.com/in/disseminate/</ProfileLine>
-          <ProfileLine>github.com/disseminate/</ProfileLine>
-        </Profile>
-        <SidebarDetails>
+          <ProfileContactBox>
+            <ProfileLine>kyle@kylewindsor.io</ProfileLine>
+            <ProfileLine>kylewindsor.io</ProfileLine>
+            <ProfileLine>linkedin.com/in/disseminate/</ProfileLine>
+            <ProfileLine>github.com/disseminate/</ProfileLine>
+          </ProfileContactBox>
           <ResumeHeader>Skills</ResumeHeader>
           <ResumeSubheader>Front-end</ResumeSubheader>
           <ul>
@@ -151,7 +147,7 @@ const ResumeComponent = (props: IResumeComponentProps) => {
               ))}
             </ul>
           </>
-        </SidebarDetails>
+        </Profile>
       </Sidebar>
       <Main>
         <ResumeHeader>Employment Experience</ResumeHeader>
