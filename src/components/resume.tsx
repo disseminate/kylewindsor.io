@@ -28,24 +28,16 @@ const ResumeContainer = styled.div`
 
 const Sidebar = styled.div`
   width: 400px;
-  background: ${(props) => props.theme.Colors.re};
   height: 100%;
-  color: white;
-
-  @media print {
-    background: transparent;
-    color: black;
-  }
+  color: black;
 `;
 
 const Profile = styled.div`
   width: 100%;
-  background-color: ${(props) => props.theme.Colors.bg2};
   padding: 30px;
   box-sizing: border-box;
 
   @media print {
-    background-color: transparent;
     padding: 10px;
   }
 `;
