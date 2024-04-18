@@ -190,7 +190,7 @@ const ResumeComponent = (props: IResumeComponentProps) => {
           </WorkExperienceHeader>
           <WorkExperienceDescription>BSc, Computer Science; MSc, Computer Vision &amp; Artificial Intelligence</WorkExperienceDescription>
         </WorkExperience>
-        <ResumeHeader>Projects</ResumeHeader>
+        <ResumeHeader>Ongoing Projects</ResumeHeader>
         <WorkExperience>
           <WorkExperienceHeader>
             <div>
