@@ -50,3 +50,7 @@ export const ResumeHeader = styled.h2`
   font-size: ${(props) => props.theme.subsubheaderFontSize};
   font-weight: ${(props) => props.theme.headerWeight};
 `;
+
+export const ResumeSubheader = styled(ResumeHeader)`
+  font-size: 1.3em;
+`;

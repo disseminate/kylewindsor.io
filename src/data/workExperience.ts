@@ -38,7 +38,8 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     url: 'https://mercury.com/',
     startYear: 2022,
     endYear: 2023,
-    description: 'Senior frontend engineer. Worked on various UI elements, form flows, and landing page elements.',
+    description:
+      'Senior frontend engineer. Worked on various UI elements, form flows, and landing page elements. Worked with designers to develop several redesigned interactive dashboard elements.',
     tags: ['React', 'ThreeJS'],
     realm: [EWorkExperienceRealm.Web],
   },
@@ -58,7 +59,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     startYear: 2021,
     endYear: 2022,
     description:
-      'Staff fullstack engineer. Wrote multiple mobile apps with Flutter; wrote the WebRTC Node/Go backend system for video streams.',
+      'Staff fullstack engineer. Wrote multiple mobile apps with Flutter; wrote the WebRTC Node/Go backend system for video streams. Deployed first version of Prepared 911.',
     tags: ['React Native', 'Flutter', 'Node', 'Go', 'Websockets', 'WebRTC', 'GraphQL'],
     realm: [EWorkExperienceRealm.Web],
   },

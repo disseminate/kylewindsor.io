@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
+    "@types/jspdf": "^2.0.0",
     "@types/node": "^20.8.3",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
@@ -16,6 +17,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
