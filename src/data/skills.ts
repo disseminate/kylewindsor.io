@@ -17,11 +17,6 @@ export const SKILLS: ISkill[] = [
     subskills: ['JavaScript'],
   },
   {
-    name: 'SASS',
-    locus: ESkillLocus.FrontEnd,
-    subskills: ['CSS'],
-  },
-  {
     name: 'React',
     locus: ESkillLocus.FrontEnd,
     subskills: ['JSX', 'TSX'],
@@ -33,6 +28,11 @@ export const SKILLS: ISkill[] = [
   {
     name: 'HTML5',
     locus: ESkillLocus.FrontEnd,
+  },
+  {
+    name: 'SASS',
+    locus: ESkillLocus.FrontEnd,
+    subskills: ['CSS'],
   },
   {
     name: 'Websockets, WebRTC, MediaStreams',

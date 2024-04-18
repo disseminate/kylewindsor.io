@@ -43,3 +43,10 @@ export const P = styled.p`
     max-width: ${(props) => props.theme.phoneLandscape.pageWidth};
   }
 `;
+
+export const ResumeHeader = styled.h2`
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: ${(props) => props.theme.subsubheaderFontSize};
+  font-weight: ${(props) => props.theme.headerWeight};
+`;

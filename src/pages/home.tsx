@@ -95,9 +95,9 @@ const Home = () => {
           <P>
             I've been programming professionally for <span className="gr">{years}</span> years.
           </P>
-          {/*<P>
+          <P>
             For something more concise, please see <Link to="/resume">my printable resume</Link>.
-  </P>*/}
+          </P>
           <TechnologiesTable>
             <SkillColumn name="Front-end" locus={ESkillLocus.FrontEnd} />
             <SkillColumn name="Back-end" locus={ESkillLocus.BackEnd} />
@@ -139,9 +139,8 @@ const Home = () => {
               preorders and counting. <span className="ye">C++, Node</span>.
             </li>
             <li>
-              <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an
-              <a href="https://apps.ankiweb.net/">Anki</a>
-              replacement.
+              <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
+              <a href="https://apps.ankiweb.net/">Anki</a> replacement.
               <span className="ye">React, Node, Typescript, PostgreSQL</span>.
             </li>
           </ul>
@@ -154,10 +153,9 @@ const Home = () => {
           <H2 id="education">Education</H2>
           <P>
             I attended <a href="https://uwo.ca/">the University of Western Ontario</a> for <span className="gr">7</span> years. I earned my
-            BSc in <span className="ye">computer science</span> and
-            <span className="ye">astrophysics</span>, followed by my MSc in <span className="ye">computer science</span>. I had a brief
-            period of
-            <span className="ye">astrophysics</span> study at the <a href="https://www.hku.hk/">University of Hong Kong</a>.
+            BSc in <span className="ye">computer science</span> and <span className="ye">astrophysics</span>, followed by my MSc in{' '}
+            <span className="ye">computer science</span>. I had a brief period of <span className="ye">astrophysics</span> study at the{' '}
+            <a href="https://www.hku.hk/">University of Hong Kong</a>.
           </P>
           <P>
             You can read <a href="/bachelor-thesis.pdf">my bachelor's thesis here</a>. My{' '}

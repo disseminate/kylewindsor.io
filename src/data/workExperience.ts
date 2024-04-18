@@ -1,10 +1,17 @@
+export enum EWorkExperienceRealm {
+  Web,
+  Games,
+}
+
 export interface IWorkExperience {
   name: string;
   url: string;
-  startYear: number;
+  startYear?: number;
   endYear?: number;
   description: string;
   tags: string[];
+  realm: EWorkExperienceRealm[];
+  omitFromResumeIfNeeded?: boolean; // For keeping the length small
 }
 
 export const WORK_EXPERIENCES: IWorkExperience[] = [
@@ -15,6 +22,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Founder & CEO. Designed all code systems for the survival game VEIN; wrote all code; implemented web apps, Discord bots, and tooling.',
     tags: ['C++', 'Unreal Engine', 'Node', 'React', 'PostgreSQL', 'SQLite', 'GraphQL'],
+    realm: [EWorkExperienceRealm.Games, EWorkExperienceRealm.Web],
   },
   {
     name: 'Alderon Games',
@@ -23,6 +31,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     endYear: 2024,
     description: 'Contract programmer. Implemented and upgraded core gameplay systems for a yet-unannounced game.',
     tags: ['C++', 'Unreal Engine'],
+    realm: [EWorkExperienceRealm.Games],
   },
   {
     name: 'Mercury',
@@ -31,6 +40,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     endYear: 2023,
     description: 'Senior frontend engineer. Worked on various UI elements, form flows, and landing page elements.',
     tags: ['React', 'ThreeJS'],
+    realm: [EWorkExperienceRealm.Web],
   },
   {
     name: 'AngelList',
@@ -40,6 +50,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Senior fullstack engineer. Worked on some legacy code porting; worked on some confidential finance features of the application.',
     tags: ['React', 'Ruby', 'PostgreSQL'],
+    realm: [EWorkExperienceRealm.Web],
   },
   {
     name: 'Prepared',
@@ -49,6 +60,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Staff fullstack engineer. Wrote multiple mobile apps with Flutter; wrote the WebRTC Node/Go backend system for video streams.',
     tags: ['React Native', 'Flutter', 'Node', 'Go', 'Websockets', 'WebRTC', 'GraphQL'],
+    realm: [EWorkExperienceRealm.Web],
   },
   {
     name: 'Crowbar Collective',
@@ -57,6 +69,8 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     endYear: 2021,
     description: 'Contract programmer. Implemented gameplay systems for an as-of-yet unannounced game.',
     tags: ['C++', 'Unreal Engine'],
+    realm: [EWorkExperienceRealm.Games],
+    omitFromResumeIfNeeded: true,
   },
   {
     name: 'QI Games',
@@ -66,6 +80,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Lead programmer. Implemented web app that sold and distributed game keys; worked on multiple core gameplay systems; and mentored junior programmers.',
     tags: ['C++', 'Unreal Engine', 'React', 'Node', 'PostgreSQL', 'MySQL'],
+    realm: [EWorkExperienceRealm.Games, EWorkExperienceRealm.Web],
   },
   {
     name: 'Devlift Media',
@@ -75,6 +90,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Senior fullstack developer. Project lead on tens of different projects spanning a wide variety of technologies. Mentored junior programmers.',
     tags: ['React', 'Angular', 'Ionic', 'React Native', 'Node', 'PostgreSQL', 'MySQL', 'MongoDB'],
+    realm: [EWorkExperienceRealm.Games, EWorkExperienceRealm.Web],
   },
   {
     name: 'ISP Canada',
@@ -84,5 +100,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     description:
       'Tools programmer. Modernized UI; implemented tools for staff to interface with stored procedures and other legacy ISP management systems.',
     tags: ['PHP', 'MySQL', 'JavaScript'],
+    realm: [EWorkExperienceRealm.Web],
+    omitFromResumeIfNeeded: true,
   },
 ];
