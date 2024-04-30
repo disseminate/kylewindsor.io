@@ -140,8 +140,7 @@ const Home = () => {
             </li>
             <li>
               <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
-              <a href="https://apps.ankiweb.net/">Anki</a> replacement.
-              <span className="ye">React, Node, Typescript, PostgreSQL</span>.
+              <a href="https://apps.ankiweb.net/">Anki</a> replacement. <span className="ye">React, Node, Typescript, PostgreSQL</span>.
             </li>
           </ul>
           <P>
