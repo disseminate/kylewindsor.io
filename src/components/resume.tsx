@@ -106,6 +106,7 @@ const WorkExperienceDescription = styled.div`
 
 interface IResumeComponentProps {
   filter: 'web' | 'game' | 'all';
+  veinWishlists?: number;
 }
 
 const ResumeComponent = (props: IResumeComponentProps) => {
@@ -207,7 +208,7 @@ const ResumeComponent = (props: IResumeComponentProps) => {
             <div></div>
           </WorkExperienceHeader>
           <WorkExperienceDescription>
-            Multiplayer open-world survival game. 84,000 Steam wishlist preorders and counting.
+            Multiplayer open-world survival game. {(props.veinWishlists || 84000).toLocaleString()} Steam wishlist preorders and counting.
           </WorkExperienceDescription>
         </WorkExperience>
         <WorkExperience>

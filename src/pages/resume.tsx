@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import ResumeComponent from '../components/resume';
 import { jsPDF } from 'jspdf';
 import { Link } from 'react-router-dom';
+import useVeinWishlists from '../data/vein';
 
 const Background = styled.div`
   @media screen {
@@ -76,11 +77,13 @@ const Resume = () => {
     });
   };
 
+  const veinWishlists = useVeinWishlists();
+
   return (
     <Background>
       <VerticalContainer>
         <ResumePageSimulator>
-          <ResumeComponent filter={filter} />
+          <ResumeComponent filter={filter} veinWishlists={veinWishlists} />
         </ResumePageSimulator>
         <Links>
           <a onClick={save}>Save to PDF</a> | <Link to="/">Back</Link>
