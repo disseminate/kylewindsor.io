@@ -200,7 +200,7 @@ const ResumeComponent = (props: IResumeComponentProps) => {
             <div></div>
           </WorkExperienceHeader>
           <WorkExperienceDescription>
-            Multiplayer open-world survival game. 70,000 Steam wishlist preorders and counting.
+            Multiplayer open-world survival game. 84,000 Steam wishlist preorders and counting.
           </WorkExperienceDescription>
         </WorkExperience>
         <WorkExperience>
