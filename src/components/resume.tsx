@@ -183,12 +183,22 @@ const ResumeComponent = (props: IResumeComponentProps) => {
         <WorkExperience>
           <WorkExperienceHeader>
             <div>
-              <WorkExperienceName>University of Western Ontario</WorkExperienceName>
+              <WorkExperienceName>Master of Science, Computer Vision &amp; Artificial Intelligence</WorkExperienceName>
               <WorkExperienceURL>https://uwo.ca/</WorkExperienceURL>
             </div>
-            <WorkExperienceDate>2011 — 2017</WorkExperienceDate>
+            <WorkExperienceDate>2015 — 2017</WorkExperienceDate>
           </WorkExperienceHeader>
-          <WorkExperienceDescription>BSc, Computer Science; MSc, Computer Vision &amp; Artificial Intelligence</WorkExperienceDescription>
+          <WorkExperienceDescription>University of Western Ontario</WorkExperienceDescription>
+        </WorkExperience>
+        <WorkExperience>
+          <WorkExperienceHeader>
+            <div>
+              <WorkExperienceName>Bachelor of Science, Computer Science &amp; Astrophysics</WorkExperienceName>
+              <WorkExperienceURL>https://uwo.ca/</WorkExperienceURL>
+            </div>
+            <WorkExperienceDate>2011 — 2015</WorkExperienceDate>
+          </WorkExperienceHeader>
+          <WorkExperienceDescription>University of Western Ontario</WorkExperienceDescription>
         </WorkExperience>
         <ResumeHeader>Ongoing Projects</ResumeHeader>
         <WorkExperience>
