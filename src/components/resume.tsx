@@ -4,6 +4,8 @@ import { ResumeHeader, ResumeSubheader } from './typography';
 import { ESkillLocus, SKILLS } from '../data/skills';
 import { EWorkExperienceRealm, WORK_EXPERIENCES } from '../data/workExperience';
 
+const PADDING = 50;
+
 const ResumeContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -24,38 +26,33 @@ const ResumeContainer = styled.div`
   print-color-adjust: exact !important;
 
   font-size: 12px;
+
+  padding: ${PADDING}px;
+  box-sizing: border-box;
 `;
 
 const Sidebar = styled.div`
-  width: 400px;
+  width: 300px;
   height: 100%;
   color: black;
 `;
 
 const Profile = styled.div`
   width: 100%;
-  padding: 30px;
   box-sizing: border-box;
-
-  @media print {
-    padding: 10px;
-  }
 `;
 
 const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 `;
 
 const ProfileImage = styled.img`
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
-
-  @media print {
-    width: 80%;
-  }
 `;
 
 const ProfileName = styled.div`
@@ -79,7 +76,7 @@ const ProfileLine = styled.div`
 const Main = styled.main`
   flex-grow: 1;
   height: 100%;
-  padding: 30px;
+  margin-left: ${PADDING}px;
   box-sizing: border-box;
 `;
 
