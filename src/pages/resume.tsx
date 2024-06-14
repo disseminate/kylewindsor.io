@@ -71,7 +71,8 @@ const Resume = () => {
 
     const doc = new jsPDF('p', 'in', [8.5, 11]);
     doc.html(document.getElementById('resume')!, { html2canvas: { scale: 1 / 100 } }).then(() => {
-      doc.save('resume-kyle-windsor.pdf');
+      const now = new Date();
+      doc.save(`resume-kyle-windsor-${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}.pdf`);
     });
   };
 
