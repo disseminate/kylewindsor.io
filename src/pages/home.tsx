@@ -110,7 +110,7 @@ const Home = () => {
         <Section aria-labelledby="work-experience">
           <H2 id="work-experience">Work Experience</H2>
           <EmploymentTable>
-            {WORK_EXPERIENCES.map((experience) => (
+            {WORK_EXPERIENCES.filter((experience) => !experience.omitFromResumeIfNeeded).map((experience) => (
               <EmploymentEntry key={experience.name}>
                 <div>
                   <a href={experience.url}>{experience.name}</a>

@@ -44,6 +44,17 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     realm: [EWorkExperienceRealm.Web],
   },
   {
+    name: 'AngelList',
+    url: 'https://www.angellist.com/',
+    startYear: 2022,
+    endYear: 2022,
+    description:
+      'Senior fullstack engineer. Worked on some legacy code porting; worked on some confidential finance features of the application.',
+    tags: ['React', 'Ruby', 'PostgreSQL'],
+    realm: [EWorkExperienceRealm.Web],
+    omitFromResumeIfNeeded: true,
+  },
+  {
     name: 'Prepared',
     url: 'https://www.prepared911.com/',
     startYear: 2021,
@@ -52,6 +63,27 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
       'Staff fullstack engineer. Wrote multiple mobile apps with Flutter; wrote the WebRTC Node/Go backend system for video streams. Deployed first version of Prepared 911.',
     tags: ['React Native', 'Flutter', 'Node', 'Go', 'Websockets', 'WebRTC', 'GraphQL'],
     realm: [EWorkExperienceRealm.Web],
+  },
+  {
+    name: 'Crowbar Collective',
+    url: 'https://www.crowbarcollective.com/',
+    startYear: 2021,
+    endYear: 2021,
+    description: 'Contract programmer. Implemented gameplay systems for an as-of-yet unannounced game.',
+    tags: ['C++', 'Unreal Engine'],
+    realm: [EWorkExperienceRealm.Games],
+    omitFromResumeIfNeeded: true,
+  },
+  {
+    name: 'QI Games',
+    url: 'https://www.qi.games/',
+    startYear: 2020,
+    endYear: 2021,
+    description:
+      'Lead programmer. Implemented web app that sold and distributed game keys; worked on multiple core gameplay systems; and mentored junior programmers.',
+    tags: ['C++', 'Unreal Engine', 'React', 'Node', 'PostgreSQL', 'MySQL'],
+    realm: [EWorkExperienceRealm.Games, EWorkExperienceRealm.Web],
+    omitFromResumeIfNeeded: true,
   },
   {
     name: 'Devlift Media',
