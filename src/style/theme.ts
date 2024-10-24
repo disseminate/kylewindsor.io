@@ -1,8 +1,8 @@
 export const Theme = {
   Colors: {
     /* Color scheme courtesy of https://stephango.com/flexoki */
-    bg: 'rgb(16, 15, 15)',
-    bg2: 'rgb(28, 27, 26)',
+    bg: 'rgb(28, 27, 26)',
+    bg2: 'rgb(35, 34, 33)',
     ui: 'rgb(40, 39, 38)',
     ui2: 'rgb(52, 51, 49)',
     ui3: 'rgb(64, 62, 60)',
@@ -28,8 +28,8 @@ export const Theme = {
   subsubheaderFontSize: '1.5em',
 
   textWeight: 400,
-  headerWeight: 200,
-  titleWeight: 200,
+  headerWeight: 400,
+  titleWeight: 400,
 
   techTableColumns: '1fr 1fr 1fr',
   employmentTemplate: '1fr / 200px 200px 1fr',

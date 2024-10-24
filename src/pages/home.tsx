@@ -20,7 +20,7 @@ const MainPage = styled.main`
 
   background: ${(props) => props.theme.Colors.bg};
   color: ${(props) => props.theme.Colors.tx};
-  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: ${(props) => props.theme.fontSizeBaseline};
   font-weight: ${(props) => props.theme.textWeight};
 
@@ -89,15 +89,8 @@ const Home = () => {
         </header>
         <HR />
         <Section aria-labelledby="about">
-          <H2 id="about">About</H2>
-          <P>I'm a senior full-stack software engineer.</P>
-          <P>
-            I'm proficient in various <span className="ye">web technologies</span> and <span className="ye">C++</span>. I've been
-            programming since I was <span className="gr">12</span>.
-          </P>
-          <P>
-            I've been programming professionally for <span className="gr">{years}</span> years.
-          </P>
+          <P>I'm a programmer. I've been programming professionally for {years} years and unprofessionally for many more.</P>
+          <P>I'm proficient in various web technologies and game engines.</P>
           <P>
             For something more concise, please see <Link to="/resume">my printable resume</Link>.
           </P>
@@ -138,26 +131,24 @@ const Home = () => {
           <H2 id="projects">Ongoing Projects</H2>
           <ul>
             <li>
-              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game.{' '}
-              <span className="gr">{veinWishlists.toLocaleString()}</span> Steam wishlist preorders and counting.{' '}
-              <span className="ye">C++, Node</span>.
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. {veinWishlists.toLocaleString()} Steam wishlist
+              preorders and counting. C++, Node.
             </li>
             <li>
               <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
-              <a href="https://apps.ankiweb.net/">Anki</a> replacement. <span className="ye">React, Node, Typescript, PostgreSQL</span>.
+              <a href="https://apps.ankiweb.net/">Anki</a> replacement. React, Node, Typescript, PostgreSQL.
             </li>
           </ul>
+          <P>There are too many projects I've worked on prior to these to list. If you're curious please get in contact.</P>
           <P>
-            There are too many projects I've worked on prior to these to list. If you're curious please get in contact. You can also take a
-            look at my <a href="https://github.com/disseminate">GitHub</a> but most of my projects are private.
+            You can also take a look at my <a href="https://github.com/disseminate">GitHub</a> but most of my projects are private.
           </P>
         </Section>
         <Section aria-labelledby="education">
           <H2 id="education">Education</H2>
           <P>
-            I attended <a href="https://uwo.ca/">the University of Western Ontario</a> for <span className="gr">7</span> years. I earned my
-            BSc in <span className="ye">computer science</span> and <span className="ye">astrophysics</span>, followed by my MSc in{' '}
-            <span className="ye">computer science</span>. I had a brief period of <span className="ye">astrophysics</span> study at the{' '}
+            I attended <a href="https://uwo.ca/">the University of Western Ontario</a> for 7 years. I earned my BSc in computer science and
+            astrophysics, followed by my MSc in computer science. I had a brief period of astrophysics study at the{' '}
             <a href="https://www.hku.hk/">University of Hong Kong</a>.
           </P>
           <P>

@@ -5,6 +5,7 @@ export const H1 = styled.h1`
   font-size: ${(props) => props.theme.headerFontSize};
   max-width: ${(props) => props.theme.pageWidth};
   font-weight: ${(props) => props.theme.titleWeight};
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: ${(props) => props.theme.phoneLandscape.width}) {
     font-size: ${(props) => props.theme.phoneLandscape.headerFontSize};

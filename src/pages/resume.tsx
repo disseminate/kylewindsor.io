@@ -41,7 +41,7 @@ const ResumePageSimulator = styled.div`
 
 const Links = styled.div`
   margin-top: 20px;
-  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   @media print {
     display: none;
   }

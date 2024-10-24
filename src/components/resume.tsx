@@ -42,19 +42,6 @@ const Profile = styled.div`
   box-sizing: border-box;
 `;
 
-const ProfileImageContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-`;
-
-const ProfileImage = styled.img`
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 20px;
-`;
-
 const ProfileName = styled.div`
   margin-bottom: 20px;
   max-width: 100%;
@@ -114,9 +101,6 @@ const ResumeComponent = (props: IResumeComponentProps) => {
     <ResumeContainer id="resume">
       <Sidebar>
         <Profile>
-          <ProfileImageContainer>
-            <ProfileImage src="/profile.jpg" alt="Headshot" />
-          </ProfileImageContainer>
           <ProfileName>Kyle Windsor</ProfileName>
           <ProfileContactBox>
             <ProfileLine>kyle@kylewindsor.io</ProfileLine>

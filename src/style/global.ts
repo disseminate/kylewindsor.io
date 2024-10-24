@@ -26,9 +26,11 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 a {
-  color: var(--tx);
+  color: var(--bl);
+  text-decoration: none;
+  transition: color 0.2s;
   &:hover {
-    color: var(--cy);
+    color: color-mix(in srgb, var(--bl), #fff 30%);
   }
 }
 

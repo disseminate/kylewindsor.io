@@ -10,7 +10,7 @@ export const TechnologiesTable = styled.div`
   padding: ${(props) => props.theme.technologiesPadding};
   box-sizing: border-box;
   border-radius: ${(props) => props.theme.technologiesBorderRadius};
-  border: 1px solid ${(props) => props.theme.Colors.ui};
+  background-color: ${(props) => props.theme.Colors.bg2};
 
   @media screen and (max-width: ${(props) => props.theme.phoneLandscape.width}) {
     max-width: ${(props) => props.theme.phoneLandscape.pageWidth};
