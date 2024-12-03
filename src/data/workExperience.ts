@@ -69,7 +69,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     url: 'https://www.crowbarcollective.com/',
     startYear: 2021,
     endYear: 2021,
-    description: 'Contract programmer. Implemented gameplay systems for an as-of-yet unannounced game.',
+    description: 'Contract programmer. Implemented gameplay systems for Rogue Point.',
     tags: ['C++', 'Unreal Engine'],
     realm: [EWorkExperienceRealm.Games],
     omitFromResumeIfNeeded: true,
