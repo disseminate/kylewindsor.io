@@ -153,7 +153,7 @@ const Home = () => {
           </P>
           <P>
             You can read <a href="/bachelor-thesis.pdf">my bachelor's thesis here</a>. My{' '}
-            <a href="https://ir.lib.uwo.ca/etd/6844/"> master's thesis is available here</a>.
+            <a href="https://uwo.scholaris.ca/items/d282b9b7-6366-4a20-a2d5-4d1e1b715a98"> master's thesis is available here</a>.
           </P>
         </Section>
         <Section aria-labelledby="personal">
