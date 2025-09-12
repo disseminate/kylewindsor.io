@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const useVeinWishlists = () => {
-  const [veinWishlists, setVeinWishlists] = React.useState(84000);
+  const [veinWishlists, setVeinWishlists] = React.useState(462000);
   React.useEffect(() => {
     let m = true;
     fetch('https://ramjetstudios.com/api/stats')
