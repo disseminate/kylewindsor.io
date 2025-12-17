@@ -155,7 +155,7 @@ const Home = () => {
         <Section aria-labelledby="personal">
           <H2 id="personal">Personal</H2>
           <P>
-            My hobbies include language learning (previously studied Chinese, Cantonese, Spanish and now focusing on Thai) and collecting
+            My hobbies include language learning (studying Chinese, Cantonese, Spanish, Thai, and Hindi) and collecting
             geodes.
           </P>
           <P>I watch a ton of movies, especially dramas, thrillers, and sci-fi, and maintain a somewhat large personal collection.</P>
