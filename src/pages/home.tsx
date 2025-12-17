@@ -172,7 +172,7 @@ const Home = () => {
             <a href="https://en.wikipedia.org/wiki/Half-Life_(series)">Half-Life</a> series,{' '}
             <a href="https://en.wikipedia.org/wiki/Left_4_Dead_(franchise)">Left 4 Dead 1 &amp; 2</a>, the{' '}
             <a href="https://en.wikipedia.org/wiki/Mass_Effect">Mass Effect</a> series,{' '}
-            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas">Fallout: New Vegas</a>, and{' '}
+            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas">Fallout: New Vegas</a>, <a href="https://store.steampowered.com/app/1876590/I_Am_Your_Beast/">I Am Your Beast</a>, <a href="https://en.wikipedia.org/wiki/Ultrakill">Ultrakill</a>, <a href="https://store.steampowered.com/app/2615540/VOIDBREAKER/">VOID/BREAKER</a>, and{' '}
             <a href="https://en.wikipedia.org/wiki/Project_Zomboid">Project Zomboid</a>. Generally I enjoy first-person shooters, RPGs, and
             simulation games. I also play a lot of games in VR.
           </P>
