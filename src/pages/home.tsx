@@ -8,7 +8,6 @@ import { HR } from '../components/rule';
 import { Section } from '../components/whitespace';
 import { WORK_EXPERIENCES } from '../data/workExperience';
 import { ESkillLocus, SKILLS } from '../data/skills';
-import useVeinWishlists from '../data/vein';
 
 const MainPage = styled.main`
   position: absolute;
@@ -79,8 +78,6 @@ const SkillColumn = (props: ISkillColumnProps) => {
 const Home = () => {
   const [years, _] = React.useState(new Date().getFullYear() - 2013);
 
-  const veinWishlists = useVeinWishlists();
-
   return (
     <MainPage>
       <CenterColumn>
@@ -131,8 +128,7 @@ const Home = () => {
           <H2 id="projects">Ongoing Projects</H2>
           <ul>
             <li>
-              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. {veinWishlists.toLocaleString()} Steam wishlist
-              preorders and counting. C++, Node.
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over 300,000 sales. C++, Node.
             </li>
             <li>
               <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
