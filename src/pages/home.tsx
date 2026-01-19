@@ -128,7 +128,8 @@ const Home = () => {
           <H2 id="projects">Ongoing Projects</H2>
           <ul>
             <li>
-              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over 300,000 sales. C++, Node.
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over
+              450,000 sales. C++, Node.
             </li>
             <li>
               <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
@@ -154,14 +155,11 @@ const Home = () => {
         </Section>
         <Section aria-labelledby="personal">
           <H2 id="personal">Personal</H2>
-          <P>
-            My hobbies include language learning (studying Chinese, Cantonese, Spanish, Thai, and Hindi) and collecting
-            geodes.
-          </P>
+          <P>My hobbies include language learning (studying Chinese, Cantonese, Spanish, Thai, and Hindi) and collecting geodes.</P>
           <P>I watch a ton of movies, especially dramas, thrillers, and sci-fi, and maintain a somewhat large personal collection.</P>
           <P>
             My favorite music genres include electronic (drum and bass, Y2K, industrial, house, trip hop, bass), folk, and progressive rock.
-            You can <a href="https://open.spotify.com/user/22ayc3ifl5r2rm2qbn232yqzi?si=2a21a8e1568c4a55"> view my Spotify profile here</a>.
+            You can <a href="https://open.spotify.com/user/22ayc3ifl5r2rm2qbn232yqzi?si=2a21a8e1568c4a55">view my Spotify profile here</a>.
           </P>
           <P>
             My favorite author is <a href="https://www.gregegan.net/">Greg Egan</a>. You should buy some of his anthologies if you're at all
@@ -172,12 +170,19 @@ const Home = () => {
             <a href="https://en.wikipedia.org/wiki/Half-Life_(series)">Half-Life</a> series,{' '}
             <a href="https://en.wikipedia.org/wiki/Left_4_Dead_(franchise)">Left 4 Dead 1 &amp; 2</a>, the{' '}
             <a href="https://en.wikipedia.org/wiki/Mass_Effect">Mass Effect</a> series,{' '}
-            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas">Fallout: New Vegas</a>, <a href="https://store.steampowered.com/app/1876590/I_Am_Your_Beast/">I Am Your Beast</a>, <a href="https://en.wikipedia.org/wiki/Ultrakill">Ultrakill</a>, <a href="https://store.steampowered.com/app/2615540/VOIDBREAKER/">VOID/BREAKER</a>, and{' '}
+            <a href="https://en.wikipedia.org/wiki/Fallout:_New_Vegas">Fallout: New Vegas</a>,{' '}
+            <a href="https://store.steampowered.com/app/1876590/I_Am_Your_Beast/">I Am Your Beast</a>,{' '}
+            <a href="https://en.wikipedia.org/wiki/Ultrakill">Ultrakill</a>,{' '}
+            <a href="https://store.steampowered.com/app/2615540/VOIDBREAKER/">VOID/BREAKER</a>, and{' '}
             <a href="https://en.wikipedia.org/wiki/Project_Zomboid">Project Zomboid</a>. Generally I enjoy first-person shooters, RPGs, and
             simulation games. I also play a lot of games in VR.
           </P>
           <P>
             My <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator">MBTI</a> is ENTJ.
+          </P>
+          <P>
+            I play the banjo (clawhammer, not Scruggs). I used to play the guitar, flute, and violin, but it's been years since I've done
+            that.
           </P>
         </Section>
         <Section aria-labelledby="contact">

@@ -175,6 +175,16 @@ const ResumeComponent = (props: IResumeComponentProps) => {
         <WorkExperience>
           <WorkExperienceHeader>
             <div>
+              <WorkExperienceName>Study Abroad</WorkExperienceName>
+              <WorkExperienceURL>https://www.hku.hk/</WorkExperienceURL>
+            </div>
+            <WorkExperienceDate>2013</WorkExperienceDate>
+          </WorkExperienceHeader>
+          <WorkExperienceDescription>University of Hong Kong</WorkExperienceDescription>
+        </WorkExperience>
+        <WorkExperience>
+          <WorkExperienceHeader>
+            <div>
               <WorkExperienceName>Bachelor of Science, Computer Science &amp; Astrophysics</WorkExperienceName>
               <WorkExperienceURL>https://uwo.ca/</WorkExperienceURL>
             </div>
@@ -192,7 +202,7 @@ const ResumeComponent = (props: IResumeComponentProps) => {
             <div></div>
           </WorkExperienceHeader>
           <WorkExperienceDescription>
-            Multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over 300,000 sales.
+            Multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over 450,000 sales.
           </WorkExperienceDescription>
         </WorkExperience>
         <WorkExperience>
