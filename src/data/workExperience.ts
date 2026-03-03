@@ -20,7 +20,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
     url: 'https://ramjetstudios.com/',
     startYear: 2022,
     description:
-      'Founder & CEO. Designed all code systems for the survival game VEIN; wrote all code; implemented web apps, Discord bots, and tooling.',
+      'Co-Founder & CEO. Designed all code systems for the survival game VEIN; wrote all code; implemented web apps, Discord bots, and tooling.',
     tags: ['C++', 'Unreal Engine', 'Node', 'React', 'PostgreSQL', 'SQLite', 'GraphQL'],
     realm: [EWorkExperienceRealm.Games, EWorkExperienceRealm.Web],
   },
