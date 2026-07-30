@@ -128,8 +128,8 @@ const Home = () => {
           <H2 id="projects">Ongoing Projects</H2>
           <ul>
             <li>
-              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Nearly 1,000,000 Steam wishlist adds and over
-              450,000 sales. C++, Node.
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Over 1,200,000 Steam wishlist adds and over 700,000
+              sales. C++, Node.
             </li>
             <li>
               <a href="https://pomelolanguage.com/">Pomelo</a>, language-learning platform designed as an{' '}
@@ -155,7 +155,7 @@ const Home = () => {
         </Section>
         <Section aria-labelledby="personal">
           <H2 id="personal">Personal</H2>
-          <P>My hobbies include language learning (studying Chinese, Cantonese, Spanish, Thai, and Hindi) and collecting geodes.</P>
+          <P>My hobbies include language learning (studying Chinese, Cantonese, Spanish, Thai, among others) and collecting geodes.</P>
           <P>I watch a ton of movies, especially dramas, thrillers, and sci-fi, and maintain a somewhat large personal collection.</P>
           <P>
             My favorite music genres include electronic (drum and bass, Y2K, industrial, house, trip hop, bass), folk, and progressive rock.
