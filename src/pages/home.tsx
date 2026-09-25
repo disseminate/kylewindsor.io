@@ -128,7 +128,7 @@ const Home = () => {
           <H2 id="projects">Ongoing Projects</H2>
           <ul>
             <li>
-              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Over 1,200,000 Steam wishlist adds and over 700,000
+              <a href="https://vein.gg/">VEIN</a>, multiplayer open-world survival game. Over 1,800,000 Steam wishlist adds and over 780,000
               sales. C++, Node.
             </li>
           </ul>
